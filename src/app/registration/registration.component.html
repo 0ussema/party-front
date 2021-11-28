@@ -1,0 +1,17 @@
+<div class="body">
+  <div class="container">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+
+      <h1 class="text"> register</h1>
+      <b>Username</b>
+      <input type="text" name="username" ngModel required #first="ngModel">
+      <b>password</b>
+      <input type="password" name="password" ngModel required >
+      <b>confirme password</b>
+      <input type="password" name="confirmedPassword" ngModel #first="ngModel" >
+
+      <button type="submit">Submit</button>
+
+    </form>
+  </div>
+</div>

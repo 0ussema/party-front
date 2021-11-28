@@ -1,0 +1,19 @@
+<div class="body">
+  <div class="container">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+      <div class="imgcontainer">
+        <img src="./assets/img/login.png" class="avatar">
+      </div>
+      <h1 class="text"> Login</h1>
+      <b>Username</b>
+      <input type="text" name="username" ngModel required #first="ngModel">
+      <b>password</b>
+      <input type="password" name="password" ngModel>
+      <button type="submit">Submit</button>
+      <a routerLink="/register" > creer compte</a>
+
+    </form>
+  </div>
+</div>
+
+

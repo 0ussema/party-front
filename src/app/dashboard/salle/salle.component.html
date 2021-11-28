@@ -1,0 +1,26 @@
+
+
+<div class="container">
+  <table id="customers">
+    <tr *ngIf="salles">
+      <th>name</th><th>capacite</th>
+    </tr>
+    <tr *ngFor="let s of salles._embedded.salles">
+      <td> {{s.name}}</td>
+      <td> {{s.capacite}}</td>
+      <td style="text-align: right">
+        <a class="pointer" style="color: forestgreen">
+          <mat-icon>add</mat-icon>
+        </a>
+        <a class="pointer"  style="color: coral" >
+          <mat-icon>edit</mat-icon>
+        </a>
+        <a class="pointer" style="color: red">
+          <mat-icon>delete</mat-icon>
+        </a>
+      </td>
+    </tr>
+
+  </table>
+
+</div>
